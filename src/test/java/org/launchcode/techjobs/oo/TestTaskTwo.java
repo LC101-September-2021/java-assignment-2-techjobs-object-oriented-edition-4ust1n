@@ -124,7 +124,7 @@ public class TestTaskTwo extends AbstractTest {
         assertFalse(positionType.equals(anotherPositionType));
         assertNotEquals(positionType.getId(), anotherPositionType.getId());
 
-        // Use reflection to make both objects have the same id and test
+        // Use reflection to make both objects have the same id and tests
         Field anotherPositionTypeIdField;
         try {
             anotherPositionTypeIdField = PositionType.class.getDeclaredField("id");
@@ -159,7 +159,7 @@ public class TestTaskTwo extends AbstractTest {
         assertEquals(hashCodeMethod.invoke(positionType), hashCodeMethod.invoke(positionType));
         assertNotEquals(hashCodeMethod.invoke(positionType), hashCodeMethod.invoke(anotherPositionType));
 
-        // Use reflection to make both objects have the same id and test
+        // Use reflection to make both objects have the same id and tests
         Field anotherPositionTypeIdField;
         try {
             anotherPositionTypeIdField = PositionType.class.getDeclaredField("id");

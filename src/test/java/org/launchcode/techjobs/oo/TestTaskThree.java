@@ -240,7 +240,7 @@ public class TestTaskThree extends AbstractTest {
         assertFalse(job.equals(anotherJob));
         assertNotEquals(getJobId(job), getJobId(anotherJob));
 
-        // Use reflection to make both objects have the same id and test
+        // Use reflection to make both objects have the same id and tests
         Field anotherJobIdField = Job.class.getDeclaredField("id");
         anotherJobIdField.setAccessible(true);
         anotherJobIdField.set(anotherJob, getJobId(job));
@@ -272,7 +272,7 @@ public class TestTaskThree extends AbstractTest {
         assertEquals(job.hashCode(), job.hashCode());
         assertNotEquals(job.hashCode(), anotherJob.hashCode());
 
-        // Use reflection to make both objects have the same id and test
+        // Use reflection to make both objects have the same id and tests
         Field anotherJobIdField = Job.class.getDeclaredField("id");
         anotherJobIdField.setAccessible(true);
         anotherJobIdField.set(anotherJob, getJobId(job));
