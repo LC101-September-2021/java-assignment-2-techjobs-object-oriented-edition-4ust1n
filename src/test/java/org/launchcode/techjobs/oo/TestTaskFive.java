@@ -4,7 +4,7 @@ import mockit.Expectations;
 import mockit.Mocked;
 import org.junit.Assert;
 import org.junit.Test;
-import org.launchcode.techjobs.oo.test.JobTest;
+import org.launchcode.techjobs.oo.tests.JobTest;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -19,7 +19,7 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testTestToStringStartsAndEndsWithNewLineExists () throws ClassNotFoundException {
-        Class jobTestClass = getClassByName("test.JobTest");
+        Class jobTestClass = getClassByName("tests.JobTest");
         Method testToStringStartsAndEndsWithNewLineMethod = null;
 
         try {
@@ -31,7 +31,7 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testTestToStringStartsAndEndsWithNewLineCallsToString (@Mocked Job job) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        Class jobTestClass = getClassByName("test.JobTest");
+        Class jobTestClass = getClassByName("tests.JobTest");
         JobTest jobTest = (JobTest) jobTestClass.getConstructor().newInstance();
         Method testToStringStartsAndEndsWithNewLineMethod = jobTestClass.getMethod("testToStringStartsAndEndsWithNewLine");
 
@@ -48,7 +48,7 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testTestToStringStartsAndEndsWithNewLineCallsAssertions (@Mocked Assert mockedAssert) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException {
-        Class jobTestClass = getClassByName("test.JobTest");
+        Class jobTestClass = getClassByName("tests.JobTest");
         JobTest jobTest = (JobTest) jobTestClass.getConstructor().newInstance();
         Method testToStringStartsAndEndsWithNewLineMethod = jobTestClass.getMethod("testToStringStartsAndEndsWithNewLine");
 
@@ -70,7 +70,7 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testTestToStringContainsCorrectLabelsAndDataExists () throws ClassNotFoundException {
-        Class jobTestClass = getClassByName("test.JobTest");
+        Class jobTestClass = getClassByName("tests.JobTest");
         Method testToStringContainsCorrectLabelsAndDataMethod = null;
 
         try {
@@ -82,7 +82,7 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testTestToStringContainsCorrectLabelsAndDataCallsToString (@Mocked Job job) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        Class jobTestClass = getClassByName("test.JobTest");
+        Class jobTestClass = getClassByName("tests.JobTest");
         JobTest jobTest = (JobTest) jobTestClass.getConstructor().newInstance();
         Method testToStringContainsCorrectLabelsAndDataMethod = jobTestClass.getMethod("testToStringContainsCorrectLabelsAndData");
 
@@ -99,7 +99,7 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testTestToStringContainsCorrectLabelsAndDataCallsAssertions (@Mocked Assert mockedAssert) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException {
-        Class jobTestClass = getClassByName("test.JobTest");
+        Class jobTestClass = getClassByName("tests.JobTest");
         JobTest jobTest = (JobTest) jobTestClass.getConstructor().newInstance();
         Method testToStringContainsCorrectLabelsAndDataMethod = jobTestClass.getMethod("testToStringContainsCorrectLabelsAndData");
 
@@ -119,7 +119,7 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testTestToStringHandlesEmptyFieldExists () throws ClassNotFoundException {
-        Class jobTestClass = getClassByName("test.JobTest");
+        Class jobTestClass = getClassByName("tests.JobTest");
         Method testToStringHandlesEmptyField = null;
 
         try {
@@ -131,7 +131,7 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testTestToStringHandlesEmptyFieldCallsToString (@Mocked Job job) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        Class jobTestClass = getClassByName("test.JobTest");
+        Class jobTestClass = getClassByName("tests.JobTest");
         JobTest jobTest = (JobTest) jobTestClass.getConstructor().newInstance();
         Method testToStringHandlesEmptyField = jobTestClass.getMethod("testToStringHandlesEmptyField");
 
@@ -148,7 +148,7 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testTestToStringHandlesEmptyFieldCallsAssertions (@Mocked Assert mockedAssert) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException {
-        Class jobTestClass = getClassByName("test.JobTest");
+        Class jobTestClass = getClassByName("tests.JobTest");
         JobTest jobTest = (JobTest) jobTestClass.getConstructor().newInstance();
         Method testToStringHandlesEmptyField = jobTestClass.getMethod("testToStringHandlesEmptyField");
 
